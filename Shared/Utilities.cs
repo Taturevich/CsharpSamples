@@ -3,6 +3,7 @@ using System.Diagnostics;
 
 namespace Shared
 {
+    // Better to use BenchmarkNet for that
     public static class Utilities
     {
         public static void DumpTimer(Action action)
@@ -19,6 +20,8 @@ namespace Shared
 
         private static Stopwatch MeasureExecution(Action action)
         {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
             var stopWatch = new Stopwatch();
             stopWatch.Start();
             action();

@@ -5,16 +5,20 @@ using System.Text;
 
 namespace StdOutCodeOptimization
 {
-    class Program
+    internal class Program
     {
-        private static StreamWriter stdout = new StreamWriter(Console.OpenStandardOutput());
-        static void Main()
+        private static readonly StreamWriter Stdout = new StreamWriter(Console.OpenStandardOutput());
+
+        private static void Main()
         {
             Utilities.DumpTimer(Evaluate, "Optimized code plus output");
             Console.ReadLine();
         }
 
-        static void Evaluate()
+        /// <summary>
+        /// Avarge execution time - 3 ms
+        /// </summary>
+        private static void Evaluate()
         {
             var textBuilder = new StringBuilder();
             for (var i = 0; i < 20; i++)
@@ -27,7 +31,7 @@ namespace StdOutCodeOptimization
             }
             foreach(var charSymbol in textBuilder.ToString())
             {
-                stdout.Write(charSymbol);
+                Stdout.Write(charSymbol);
             }
         }
     }

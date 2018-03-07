@@ -4,15 +4,18 @@ using System.Text;
 
 namespace CodeOptimization
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             Utilities.DumpTimer(Evaluate, "Optimized code");
             Console.ReadLine();
         }
 
-        static void Evaluate()
+        /// <summary>
+        /// Avarge execution time - 6 ms
+        /// </summary>
+        private static void Evaluate()
         {
             var textBuilder = new StringBuilder();
             for (var i = 0; i < 20; i++)

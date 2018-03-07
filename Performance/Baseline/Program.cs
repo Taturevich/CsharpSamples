@@ -3,15 +3,18 @@ using System;
 
 namespace Baseline
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             Utilities.DumpTimer(Evaluate, "Baseline");
             Console.ReadLine();
         }
 
-        static void Evaluate()
+        /// <summary>
+        /// Avarge execution time - 40 ms
+        /// </summary>
+        private static void Evaluate()
         {
             for (var i = 0; i < 20; i++)
             {
