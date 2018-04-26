@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StdOut", "Performance\StdOu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StdOutCodeOptimization", "Performance\StdOutCodeOptimization\StdOutCodeOptimization.csproj", "{E448C3B1-DEBD-41CC-9935-158F200A271D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameofVsExpression", "Performance\NameofVsExpression\NameofVsExpression.csproj", "{29E537E3-1988-4446-9E1A-9589B9E5FA80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{E448C3B1-DEBD-41CC-9935-158F200A271D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E448C3B1-DEBD-41CC-9935-158F200A271D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E448C3B1-DEBD-41CC-9935-158F200A271D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E537E3-1988-4446-9E1A-9589B9E5FA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E537E3-1988-4446-9E1A-9589B9E5FA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E537E3-1988-4446-9E1A-9589B9E5FA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E537E3-1988-4446-9E1A-9589B9E5FA80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{1914A043-8C9E-402B-A183-C2AA2DEAEF94} = {66A967D8-92BF-4A3D-BA57-17762ABA9B7E}
 		{6E91AA96-95E9-4EB7-9683-E987C931749B} = {66A967D8-92BF-4A3D-BA57-17762ABA9B7E}
 		{E448C3B1-DEBD-41CC-9935-158F200A271D} = {66A967D8-92BF-4A3D-BA57-17762ABA9B7E}
+		{29E537E3-1988-4446-9E1A-9589B9E5FA80} = {66A967D8-92BF-4A3D-BA57-17762ABA9B7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {945D2DC5-3D06-4BF0-952D-6AAF598443C0}
